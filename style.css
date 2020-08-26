@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+.mad{
+    flex:0 0 10%;
+    margin-left:700px;
+    text-align-last:right;
+}
+:root{
+    --primary:rgb(13, 141, 13);
+    --secondary:rgb(187, 187, 25);
+}
+.bg-success{
+    background-color: rgb(193, 224, 80)!important;
+}
+@media(min-width:768px){
+    .top-bar.bg-success{
+        background-color: transparent !important;
+    }
+    #header{
+        position:relative;
+    }
+    header .top-bar{
+        position:absolute;
+        z-index:1000;
+    }
+}
+.navbar-brand{
+    font-size:2rem;
+    font-weight:900;
+}
+.navbar-nav .nav-link{
+    text-transform: uppercase;
+    color:white!important;
+    font-size: 1rem;
+    font-weight: 900;
+}
+/*dropdown*/
+.dropdown-menu{
+    background-color:mediumturquoise;
+    color:white;
+
+}
+.dropdown-menu .dropdown-item{
+    color:white;
+    text-transform: uppercase;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color:black;
+}
+.btn-primary{
+    background-color:rgb(68, 196, 228) !important;
+    color:white;
+    border-radius:10px;
+    border:1px solid rgb(68, 196, 228) !important;
+}
+.btn-primary:hover{
+    background-color: rgb(146, 214, 235) !important;
+    color:Black;
+    border:1px solid rgb(146, 214, 235) !important;
+}
+#contact{
+    background-image: url(../Images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#contact .row{
+    height:26rem;
+}
+#blog h3::after{
+    content:" ";
+    display:block;
+    width:8rem;
+    height:.2rem;
+    background-color:rgb(68, 196, 228) !important;
+    margin-top:0.23rem;
+}
+.testimonials .carousel-item{
+    padding-left:2rem;
+}
+.testimonials .testimonial{
+    position:relative;
+    font-size:1.1rem;
+    line-height:2.6rem;
+    font-weight:400;
+    transition-timing-function: ease-out;
+}
+.testimonials .testimonial:before{
+    content:open-quote;
+    font-size:4rem;
+    position:absolute;
+    left:-2rem;
+    top:0;
+    font-weight:700;
+}
